@@ -5,9 +5,9 @@ public class Patty extends GraphicsObject {
 
     int width;
     int height;
+    Color color;
 
-
-    public Patty(int x, int y) {
+    public Patty(int x, int y, int width, int height) {
         super(x, y);
         this.width = width;
         this.height =  height;
@@ -21,12 +21,10 @@ public class Patty extends GraphicsObject {
     public void draw(Graphics g) {
         // change the color of the pen
 
-        g.setColor(new Color(80, 35, 25));
+        g.setColor(new Color(250, 140, 140));
 
-        int xpoints[] = {this.x,this.x + 15, this.x + 45, this.x + 20, this.x + 30, this.x, this.x + 30, this.x + 20,
-        this.x + 45, this.x + 15};
-        int ypoints[] = {this.y, this.y + 30, this.y + 30, this.y + 45, this.y + 60, this.y + 50, this.y + 60,
-                this.y + 45, this.y + 30, this.y + 30};
+        int xpoints[] = {this.x,this.x + 15, this.x + 45, this.x + 20, this.x + 30, this.x, this.x + 30, this.x + 20, this.x + 45, this.x + 15};
+        int ypoints[] = {this.y, this.y + 30, this.y + 30, this.y + 45, this.y + 60, this.y + 50, this.y + 60, this.y + 45, this.y + 30, this.y + 30};
         int npoints = xpoints.length;
         g.drawPolygon(xpoints,ypoints,npoints);
         g.fillPolygon(xpoints,ypoints,npoints);

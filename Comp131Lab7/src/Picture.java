@@ -90,7 +90,7 @@ public class Picture extends JPanel {
 
         pic.addObject(new Spunch(300, 300, 60, 60));
 
-        pic.addObject(new Patty(200, 200,)); 
+        pic.addObject(new Patty(200, 200, 60, 60));
 	//pic.addObject(new Rectangle(100, 150, 50, 50, new Color(154, 8, 178)));
 	//pic.addObject(new Rectangle(300, 300, 150, 100, new Color(255, 255, 255)));
 

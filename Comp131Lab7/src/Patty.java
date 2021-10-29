@@ -23,11 +23,15 @@ public class Patty extends GraphicsObject {
 
         g.setColor(new Color(250, 140, 140));
 
-        int xpoints[] = {this.x,this.x + 15, this.x + 45, this.x + 20, this.x + 30, this.x, this.x + 30, this.x + 20, this.x + 45, this.x + 15};
+        int xpoints[] = {this.x,this.x + 15, this.x + 45, this.x + 20, this.x + 30, this.x, this.x - 30, this.x - 20, this.x - 45, this.x - 15};
         int ypoints[] = {this.y, this.y + 30, this.y + 30, this.y + 45, this.y + 60, this.y + 50, this.y + 60, this.y + 45, this.y + 30, this.y + 30};
         int npoints = xpoints.length;
         g.drawPolygon(xpoints,ypoints,npoints);
         g.fillPolygon(xpoints,ypoints,npoints);
+
+        g.setColor(new Color(0, 0, 0));
+        g.fillRect(this.x - 10, this.y + 15, this.width - 56, this.height - 56);
+        g.fillRect(this.x + 6, this.y + 15, this.width - 56, this.height - 56);
 
 
 
